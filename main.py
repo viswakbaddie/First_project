@@ -109,6 +109,19 @@ while True:
                 break
             else:
                 print('invalid input ')
+    if question_number == 4.3:
+        l=[]
+        while True:
+            ch = (input('enter number'))
+            if ch !='':
+                l.append(int(ch))
+            else:
+                break
+        l.sort()
+        print('largest',l[-1])
+        print('smallest',l[0])
+
+
 
 
 
