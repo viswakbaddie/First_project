@@ -108,7 +108,7 @@ while True:
             elif inches<0:
                 break
             else:
-                print('invalid input')
+                print('invalid input ')
 
 
 
