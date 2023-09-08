@@ -1,4 +1,5 @@
 import random
+#questions upto 5 are in this file
 while True:
     question_number = float(input('enter question number and 0 to quit'))
     if question_number == 2.1:
@@ -120,6 +121,74 @@ while True:
         l.sort()
         print('largest',l[-1])
         print('smallest',l[0])
+    if question_number == 4.4: #need to check
+        random = random.randint(1,10)
+        while True:
+            number = int(input('enter ur guess'))
+            if random>number:
+                print('to low')
+            elif number>random:
+                print('too high')
+            else:
+                print('correct the number was:',random)
+                break
+    if question_number == 4.5:
+        username = input('enter username')
+        password = input('enter password')
+        i=0
+        while True:
+            if i==5:
+                print('too many trie failed')
+                break
+            if username == 'python' and password == 'rules':
+
+                print('welcome')
+            else:
+                print('incorrect try again')
+                username = input('enter username')
+                password = input('enter password')
+                i=i+1
+    if question_number == 4.6:
+        print('work in progress')
+    if question_number == 5.1:
+        dice = int(input('enter how many dice'))
+        sum = 0
+        for i in range(dice):
+            sum = sum + random.randint(1,7)
+        print(sum)
+    if question_number == 5.2:
+        l=[]
+        while True:
+            x = input('enter number')
+            if x == '':
+                break
+            else:
+                l.append(int(x))
+        y=l.sort()
+        print(y[-6:-1])
+    if question_number == 5.3:
+        k=0
+        no = int(input('enter number'))
+        for i in range(2,no):
+            if no%i==0:
+                print('non prime')
+                break
+            else:
+                k=1
+        if k==1:
+            print('prime number')
+    if question_number == 5.4:
+        city_list=[]
+        for i in range(5):
+            city = input('enter city name:')
+            city_list.append(city)
+        for i in city_list:
+            print(i)
+
+
+
+
+
 
 
 
